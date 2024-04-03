@@ -30,6 +30,11 @@
   (fn [db _]
     (:message db)))
 
+; Nice way to generate subsciptions for many keys.
+(doseq [kw [:my-key]]
+  (rf/reg-sub
+    kw
+    (fn [db _] (kw db))))
 
 ;; -- Entry Point -------------------------------------------------------------
 
