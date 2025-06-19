@@ -2,6 +2,8 @@
 
 ## Setup
 
+Follow Follow https://github.com/binaryage/cljs-devtools/blob/master/docs/installation.md.
+
 First, install dependencies:
 
     # Linuxbrew and clojure
